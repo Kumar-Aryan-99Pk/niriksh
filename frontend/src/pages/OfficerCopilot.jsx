@@ -49,7 +49,7 @@ export default function OfficerCopilot() {
       
       Respond ONLY with valid JSON. Do not include markdown formatting, backticks, or extra text.`;
 
-      const response = await axios.post(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+      const response = await axios.post(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`, {
         contents: [{ parts: [{ text: prompt }] }]
       });
 
