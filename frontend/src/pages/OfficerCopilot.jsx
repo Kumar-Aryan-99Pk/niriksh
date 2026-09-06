@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Calculator, MapPin, IndianRupee, HardHat, Info, ShieldCheck, Sparkles, FileText, Loader2, CheckCircle2 } from 'lucide-react';
+import { Calculator, MapPin, IndianRupee, HardHat, Info, ShieldCheck, Sparkles, FileText, Loader2, CheckCircle2, Calendar } from 'lucide-react';
 
 export default function OfficerCopilot() {
   const [benchmarks, setBenchmarks] = useState([]);
@@ -27,7 +27,6 @@ export default function OfficerCopilot() {
 
   const uniqueStates = [...new Set(benchmarks.map(b => b.State))].sort();
 
-  // True AI NLP Engine: Uses Gemini to understand semantic intent and Hinglish
   const analyzeDescription = async () => {
     if (!projectDescription || !selectedState) return;
     
@@ -37,35 +36,53 @@ export default function OfficerCopilot() {
     try {
       const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
       
-      const prompt = `You are a strict data classification assistant for the Indian Government's MPLADS scheme. 
-      Read the following project description (which may be in English, Hindi, or Hinglish) and classify it into ONE of these exact categories:
-      "Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others".
+      // Update prompt to request structured JSON containing the estimates
+      const prompt = `You are a project estimator for the Indian Government's MPLADS scheme. 
+      Analyze the following project description: "${projectDescription}"
+      Region: "${selectedState}"
       
-      Project Description: "${projectDescription}"
+      Provide your output as a raw JSON object with exactly these four keys:
+      1. "category": Must be exactly one of: "Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others".
+      2. "estimatedCostLakhs": A realistic median cost estimate in Lakhs (number only).
+      3. "costRange": A realistic cost range string (e.g., "12 - 18 Lakhs").
+      4. "duration": A realistic estimated time to complete (e.g., "3 - 6 months").
       
-      Reply ONLY with the exact category name. Do not include quotes, periods, or extra text.`;
+      Respond ONLY with valid JSON. Do not include markdown formatting, backticks, or extra text.`;
 
       const response = await axios.post(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
         contents: [{ parts: [{ text: prompt }] }]
       });
 
-      let detectedCategory = response.data.candidates[0].content.parts[0].text.trim();
-      console.log("AI Classified Intent as:", detectedCategory);
+      const rawText = response.data.candidates[0].content.parts[0].text.trim();
+      // Clean up markdown in case Gemini adds it
+      const cleanJson = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
+      const aiData = JSON.parse(cleanJson);
+
+      let detectedCategory = aiData.category;
+      console.log("AI Forecast Generated:", aiData);
 
       const validCategories = ["Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others"];
       if (!validCategories.includes(detectedCategory)) {
         detectedCategory = 'Normal/Others';
       }
 
-      let result = benchmarks.find(b => b.State === selectedState && b.Category === detectedCategory);
-      
-      if (!result) {
-        result = benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
+      // Fetch local data for vendors and historical counts based on AI's category
+      let localData = benchmarks.find(b => b.State === selectedState && b.Category === detectedCategory);
+      if (!localData) {
+        localData = benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
         detectedCategory = 'Normal/Others';
       }
 
       setMatchedCategory(detectedCategory);
-      setPrediction(result || null);
+      
+      // Merge AI cost/duration with Local vendor data
+      setPrediction({
+        Estimated_Cost: aiData.estimatedCostLakhs * 100000, // Convert Lakhs back to raw value for the UI formatter
+        Cost_Range: aiData.costRange,
+        Duration: aiData.duration,
+        Recommended_Vendors: localData?.Recommended_Vendors || [],
+        Historical_Projects: localData?.Historical_Projects || "N/A"
+      });
 
     } catch (error) {
       console.error("AI Classification Failed, falling back to heuristic engine...", error);
@@ -79,11 +96,18 @@ export default function OfficerCopilot() {
       else if (text.match(/hospital|medical|ambulance|swasthya|clinic/)) detectedCategory = 'Health and Family Welfare';
       else if (text.match(/light|bijli|electricity|solar/)) detectedCategory = 'Electricity/Lighting';
 
-      let result = benchmarks.find(b => b.State === selectedState && b.Category === detectedCategory) 
-                || benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
+      let localData = benchmarks.find(b => b.State === selectedState && b.Category === detectedCategory) 
+                 || benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
       
       setMatchedCategory(detectedCategory);
-      setPrediction(result || null);
+      // Fallback object if JSON parsing fails
+      setPrediction(localData ? {
+        Estimated_Cost: localData.Estimated_Cost,
+        Cost_Range: localData.Cost_Range,
+        Duration: "Timeline Unavailable",
+        Recommended_Vendors: localData.Recommended_Vendors,
+        Historical_Projects: localData.Historical_Projects
+      } : null);
     }
     
     setIsAnalyzing(false);
@@ -118,7 +142,7 @@ export default function OfficerCopilot() {
           AI Officer Copilot
         </h1>
         <p style={{ color: 'var(--ink-soft)', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto' }}>
-          Describe your project naturally (English or Hinglish). The AI will analyze the requirements and forecast budgets and optimal vendors.
+          Describe your project naturally (English or Hinglish). The AI will analyze the requirements and forecast budgets, timelines, and optimal vendors.
         </p>
       </div>
 
@@ -168,7 +192,7 @@ export default function OfficerCopilot() {
             justifyContent: 'center'
           }}
         >
-          {isAnalyzing ? <><Loader2 className="animate-spin" size={20} /> Analyzing Intent & Correlating Data...</> : <><Sparkles size={20} /> Generate AI Forecast</>}
+          {isAnalyzing ? <><Loader2 className="animate-spin" size={20} /> Analyzing Intent & Generating Forecast...</> : <><Sparkles size={20} /> Generate AI Forecast</>}
         </button>
 
       </div>
@@ -186,11 +210,11 @@ export default function OfficerCopilot() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '24px' }}>
             
-            {/* Cost Estimate Card */}
+            {/* Cost & Duration Estimate Card */}
             <div className="card" style={{ padding: '32px', borderTop: '4px solid var(--navy)', display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <IndianRupee size={24} color="var(--navy)" />
-                <h3 style={{ margin: 0, fontSize: '1.2rem', fontFamily: 'var(--font-display)', color: 'var(--ink)' }}>Financial Estimate</h3>
+                <h3 style={{ margin: 0, fontSize: '1.2rem', fontFamily: 'var(--font-display)', color: 'var(--ink)' }}>AI Forecast: Financial & Timeline</h3>
               </div>
               
               <div style={{ marginBottom: '24px' }}>
@@ -200,15 +224,24 @@ export default function OfficerCopilot() {
                 </div>
               </div>
 
-              <div style={{ background: 'var(--paper)', padding: '16px', borderRadius: '8px', border: '1px solid var(--line)', marginBottom: '16px' }}>
-                <div style={{ fontSize: '0.8rem', color: 'var(--ink-soft)', marginBottom: '4px' }}>Typical Range (25th - 75th Percentile)</div>
-                <div style={{ fontWeight: '600', color: 'var(--ink)', fontFamily: 'var(--font-mono)' }}>{prediction.Cost_Range}</div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+                <div style={{ background: 'var(--paper)', padding: '16px', borderRadius: '8px', border: '1px solid var(--line)' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--ink-soft)', marginBottom: '4px' }}>Typical Range</div>
+                  <div style={{ fontWeight: '600', color: 'var(--ink)', fontFamily: 'var(--font-mono)' }}>{prediction.Cost_Range}</div>
+                </div>
+
+                <div style={{ background: 'var(--paper)', padding: '16px', borderRadius: '8px', border: '1px solid var(--line)', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--ink-soft)', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Calendar size={14} color="var(--gold)" /> Est. Duration
+                  </div>
+                  <div style={{ fontWeight: '600', color: 'var(--ink)', fontFamily: 'var(--font-mono)' }}>{prediction.Duration}</div>
+                </div>
               </div>
 
               <div style={{ background: 'rgba(20, 33, 61, 0.05)', padding: '16px', borderRadius: '8px', display: 'flex', gap: '12px', alignItems: 'flex-start', marginTop: 'auto' }}>
                 <Info size={20} color="var(--navy)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div style={{ fontSize: '0.9rem', color: 'var(--ink)', lineHeight: '1.4' }}>
-                  Based on historical data from <strong>{prediction.Historical_Projects}</strong> successfully completed projects matching this intent.
+                  Vendor recommendations are based on <strong>{prediction.Historical_Projects}</strong> historically verified projects in this state matching the AI's parameter extraction.
                 </div>
               </div>
             </div>
