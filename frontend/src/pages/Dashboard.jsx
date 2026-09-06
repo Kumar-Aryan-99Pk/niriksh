@@ -349,8 +349,8 @@ export default function Dashboard({ houseFilter }) {
                   contentStyle={{ borderRadius: '4px', border: '1px solid var(--line-strong)', boxShadow: '0 4px 6px -1px rgba(28,27,24,0.15)', fontFamily: 'var(--font-body)' }}
                 />
                 <Legend verticalAlign="top" height={36} wrapperStyle={{ fontSize: '0.85rem', color: 'var(--ink)' }}/>
-                <Bar yAxisId="left" dataKey="Total_Allocated" name="Allocated (₹ Cr)" fill="var(--navy)" radius={[4, 4, 0, 0]} barSize={20} />
-                <Bar yAxisId="left" dataKey="Total_Expenditure" name="Expenditure (₹ Cr)" fill="var(--sage)" radius={[4, 4, 0, 0]} barSize={20} />
+                <Bar yAxisId="left" dataKey="Allocated" name="Allocated (₹ Cr)" fill="var(--navy)" radius={[4, 4, 0, 0]} barSize={20} />
+                <Bar yAxisId="left" dataKey="Expenditure" name="Expenditure (₹ Cr)" fill="var(--sage)" radius={[4, 4, 0, 0]} barSize={20} />
                 <Line yAxisId="right" type="monotone" dataKey="Utilization" name="Utilization %" stroke="var(--gold)" strokeWidth={3} dot={{ r: 4, fill: '#fff', stroke: 'var(--gold)', strokeWidth: 2 }} activeDot={{ r: 6 }} />
               </ComposedChart>
             </ResponsiveContainer>
