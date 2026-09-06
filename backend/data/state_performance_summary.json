@@ -1,0 +1,290 @@
+[
+  {
+    "State":"Uttar Pradesh",
+    "Total Works":15664,
+    "Completed":10258,
+    "Pending":5406,
+    "Utilization %":"51.24%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Gujarat",
+    "Total Works":6598,
+    "Completed":3109,
+    "Pending":3489,
+    "Utilization %":"26.99%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Madhya Pradesh",
+    "Total Works":6031,
+    "Completed":2643,
+    "Pending":3388,
+    "Utilization %":"40.31%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Odisha",
+    "Total Works":5235,
+    "Completed":1553,
+    "Pending":3682,
+    "Utilization %":"15.94%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Jharkhand",
+    "Total Works":4671,
+    "Completed":986,
+    "Pending":3685,
+    "Utilization %":"45.27%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Karnataka",
+    "Total Works":4595,
+    "Completed":1311,
+    "Pending":3284,
+    "Utilization %":"28.76%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Kerala",
+    "Total Works":4593,
+    "Completed":1265,
+    "Pending":3328,
+    "Utilization %":"21.31%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Maharashtra",
+    "Total Works":4556,
+    "Completed":1176,
+    "Pending":3380,
+    "Utilization %":"20.32%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Bihar",
+    "Total Works":3762,
+    "Completed":3762,
+    "Pending":0,
+    "Utilization %":"45.4%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Telangana",
+    "Total Works":3728,
+    "Completed":2347,
+    "Pending":1381,
+    "Utilization %":"23.86%",
+    "Critical Risks":0
+  },
+  {
+    "State":"West Bengal",
+    "Total Works":3512,
+    "Completed":2412,
+    "Pending":1100,
+    "Utilization %":"29.56%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Tamil Nadu",
+    "Total Works":3328,
+    "Completed":3328,
+    "Pending":0,
+    "Utilization %":"43.42%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Punjab",
+    "Total Works":3212,
+    "Completed":1994,
+    "Pending":1218,
+    "Utilization %":"43.09%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Rajasthan",
+    "Total Works":3094,
+    "Completed":1311,
+    "Pending":1783,
+    "Utilization %":"27.24%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Andhra Pradesh",
+    "Total Works":2869,
+    "Completed":1464,
+    "Pending":1405,
+    "Utilization %":"23.23%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Assam",
+    "Total Works":2537,
+    "Completed":230,
+    "Pending":2307,
+    "Utilization %":"32.48%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Himachal Pradesh",
+    "Total Works":1814,
+    "Completed":731,
+    "Pending":1083,
+    "Utilization %":"43.48%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Haryana",
+    "Total Works":1695,
+    "Completed":461,
+    "Pending":1234,
+    "Utilization %":"21.52%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Chhattisgarh",
+    "Total Works":1628,
+    "Completed":1063,
+    "Pending":565,
+    "Utilization %":"40.02%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Uttarakhand",
+    "Total Works":1114,
+    "Completed":351,
+    "Pending":763,
+    "Utilization %":"25.91%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Jammu And Kashmir",
+    "Total Works":739,
+    "Completed":508,
+    "Pending":231,
+    "Utilization %":"23.21%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Delhi",
+    "Total Works":490,
+    "Completed":246,
+    "Pending":244,
+    "Utilization %":"11.78%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Meghalaya",
+    "Total Works":351,
+    "Completed":230,
+    "Pending":121,
+    "Utilization %":"57.76%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Goa",
+    "Total Works":232,
+    "Completed":58,
+    "Pending":174,
+    "Utilization %":"21.84%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Puducherry",
+    "Total Works":134,
+    "Completed":44,
+    "Pending":90,
+    "Utilization %":"26.92%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Mizoram",
+    "Total Works":132,
+    "Completed":132,
+    "Pending":0,
+    "Utilization %":"56.19%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Sikkim",
+    "Total Works":122,
+    "Completed":122,
+    "Pending":0,
+    "Utilization %":"62.86%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Chandigarh",
+    "Total Works":101,
+    "Completed":35,
+    "Pending":66,
+    "Utilization %":"12.51%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Tripura",
+    "Total Works":94,
+    "Completed":38,
+    "Pending":56,
+    "Utilization %":"28.82%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Arunachal Pradesh",
+    "Total Works":82,
+    "Completed":82,
+    "Pending":0,
+    "Utilization %":"54.25%",
+    "Critical Risks":0
+  },
+  {
+    "State":"The Dadra And Nagar Haveli And Daman And Diu",
+    "Total Works":63,
+    "Completed":0,
+    "Pending":63,
+    "Utilization %":"0.0%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Manipur",
+    "Total Works":58,
+    "Completed":36,
+    "Pending":22,
+    "Utilization %":"52.66%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Ladakh",
+    "Total Works":55,
+    "Completed":0,
+    "Pending":55,
+    "Utilization %":"3.73%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Nagaland",
+    "Total Works":38,
+    "Completed":38,
+    "Pending":0,
+    "Utilization %":"94.69%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Andaman And Nicobar Islands",
+    "Total Works":29,
+    "Completed":0,
+    "Pending":29,
+    "Utilization %":"10.54%",
+    "Critical Risks":0
+  },
+  {
+    "State":"Lakshadweep",
+    "Total Works":26,
+    "Completed":2,
+    "Pending":24,
+    "Utilization %":"25.55%",
+    "Critical Risks":0
+  }
+]

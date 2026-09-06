@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "data": {
+    "totalAllocated": 116819035627.53,
+    "totalExpenditure": 39847655097.14,
+    "utilizationPercentage": 34.11,
+    "totalMPs": 774,
+    "totalWorksCompleted": 43899,
+    "totalWorksRecommended": 86982,
+    "pendingWorks": 43083,
+    "completionRate": 50.47,
+    "totalTransactions": 108362
+  }
+}
