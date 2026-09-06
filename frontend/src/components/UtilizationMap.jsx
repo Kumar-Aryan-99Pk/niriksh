@@ -13,7 +13,7 @@ function UtilizationMap() {
   const [tooltipContent, setTooltipContent] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/state-summary')
+    axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/state-summary`)
       .then(res => {
         const payload = res.data.data || res.data;
         setStateData(Array.isArray(payload) ? payload : []);
