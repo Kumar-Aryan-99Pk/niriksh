@@ -34,50 +34,46 @@ export default function OfficerCopilot() {
     setPrediction(null);
 
     try {
-      const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
+      const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY; 
       
-      // Update prompt to request structured JSON containing the estimates
-      const prompt = `You are a project estimator for the Indian Government's MPLADS scheme. 
-      Analyze the following project description: "${projectDescription}"
-      Region: "${selectedState}"
-      
+      const systemPrompt = `You are a project estimator for the Indian Government's MPLADS scheme. 
       Provide your output as a raw JSON object with exactly these four keys:
       1. "category": Must be exactly one of: "Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others".
       2. "estimatedCostLakhs": A realistic median cost estimate in Lakhs (number only).
       3. "costRange": A realistic cost range string (e.g., "12 - 18 Lakhs").
-      4. "duration": A realistic estimated time to complete (e.g., "3 - 6 months").
-      
-      Respond ONLY with valid JSON. Do not include markdown formatting, backticks, or extra text.`;
+      4. "duration": A realistic estimated time to complete (e.g., "3 - 6 months").`;
 
-      const response = await axios.post(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`, {
-        contents: [{ parts: [{ text: prompt }] }]
+      const response = await axios.post('https://api.openai.com/v1/chat/completions', {
+        model: "gpt-4o-mini", // Fast and cheap model
+        response_format: { type: "json_object" }, // Forces strict JSON output
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: `Analyze this project: "${projectDescription}" in Region: "${selectedState}"` }
+        ]
+      }, {
+        headers: {
+          'Authorization': `Bearer ${OPENAI_API_KEY}`,
+          'Content-Type': 'application/json'
+        }
       });
 
-      const rawText = response.data.candidates[0].content.parts[0].text.trim();
-      // Clean up markdown in case Gemini adds it
-      const cleanJson = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-      const aiData = JSON.parse(cleanJson);
+      // OpenAI returns the text inside choices[0].message.content
+      const rawText = response.data.choices[0].message.content;
+      const aiData = JSON.parse(rawText);
+      
+      console.log("OpenAI Forecast Generated:", aiData);
 
       let detectedCategory = aiData.category;
-      console.log("AI Forecast Generated:", aiData);
-
       const validCategories = ["Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others"];
-      if (!validCategories.includes(detectedCategory)) {
-        detectedCategory = 'Normal/Others';
-      }
+      if (!validCategories.includes(detectedCategory)) detectedCategory = 'Normal/Others';
 
-      // Fetch local data for vendors and historical counts based on AI's category
       let localData = benchmarks.find(b => b.State === selectedState && b.Category === detectedCategory);
-      if (!localData) {
-        localData = benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
-        detectedCategory = 'Normal/Others';
-      }
+      if (!localData) localData = benchmarks.find(b => b.State === selectedState && b.Category === 'Normal/Others');
 
       setMatchedCategory(detectedCategory);
       
-      // Merge AI cost/duration with Local vendor data
       setPrediction({
-        Estimated_Cost: aiData.estimatedCostLakhs * 100000, // Convert Lakhs back to raw value for the UI formatter
+        Estimated_Cost: Number(aiData.estimatedCostLakhs) * 100000, 
         Cost_Range: aiData.costRange,
         Duration: aiData.duration,
         Recommended_Vendors: localData?.Recommended_Vendors || [],
