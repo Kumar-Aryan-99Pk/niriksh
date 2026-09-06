@@ -34,7 +34,7 @@ export default function OfficerCopilot() {
     setPrediction(null);
 
     try {
-      const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY; 
+      const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY; 
       
       const systemPrompt = `You are a project estimator for the Indian Government's MPLADS scheme. 
       Provide your output as a raw JSON object with exactly these four keys:
@@ -43,8 +43,9 @@ export default function OfficerCopilot() {
       3. "costRange": A realistic cost range string (e.g., "12 - 18 Lakhs").
       4. "duration": A realistic estimated time to complete (e.g., "3 - 6 months").`;
 
-      const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-        model: "gpt-4o-mini", // Fast and cheap model
+      // Point to Groq's OpenAI-compatible endpoint
+      const response = await axios.post('https://api.groq.com/openai/v1/chat/completions', {
+        model: "llama-3.3-70b-versatile", // Or use "llama-3.1-8b-instant" for even faster speeds
         response_format: { type: "json_object" }, // Forces strict JSON output
         messages: [
           { role: "system", content: systemPrompt },
@@ -52,16 +53,16 @@ export default function OfficerCopilot() {
         ]
       }, {
         headers: {
-          'Authorization': `Bearer ${OPENAI_API_KEY}`,
+          'Authorization': `Bearer ${GROQ_API_KEY}`,
           'Content-Type': 'application/json'
         }
       });
 
-      // OpenAI returns the text inside choices[0].message.content
+      // The response structure is identical to OpenAI
       const rawText = response.data.choices[0].message.content;
       const aiData = JSON.parse(rawText);
       
-      console.log("OpenAI Forecast Generated:", aiData);
+      console.log("Groq Forecast Generated:", aiData);
 
       let detectedCategory = aiData.category;
       const validCategories = ["Education", "Roads, Pathways and Bridges", "Drinking Water and Public Health", "Health and Family Welfare", "Electricity/Lighting", "Normal/Others"];
