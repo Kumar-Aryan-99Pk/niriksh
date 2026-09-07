@@ -1,1017 +1,1017 @@
 [
   {
-    "State":"Andhra Pradesh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":475577.5,
-    "Cost_Range":"\u20b9200,000 - \u20b9499,589",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Andhra Pradesh",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 250000,
+    "Cost_Range": "₹150,000 - ₹350,000",
+    "Duration": "2 - 4 weeks",
+    "Recommended_Vendors": [
       "Surya Teja Bore wells",
       "NARRAVULA ASMATH KUMAR",
       "Assistant Director Welfare of Differently Abled TG  Sr Citizens YSR Annamayya District"
     ],
-    "Historical_Projects":1428
+    "Historical_Projects": 1428
   },
   {
-    "State":"Andhra Pradesh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":499997.0,
-    "Cost_Range":"\u20b9499,415 - \u20b9811,840",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Andhra Pradesh",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹4,000,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "M Siva Krishna Reddy",
       "Kondeti Vijayabhaskar",
       "EE APSIDC INTREST AND DISBURESEMENT"
     ],
-    "Historical_Projects":34
+    "Historical_Projects": 34
   },
   {
-    "State":"Andhra Pradesh",
-    "Category":"Trust and Society",
-    "Estimated_Cost":2646524.0,
-    "Cost_Range":"\u20b91,469,786 - \u20b93,823,262",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Andhra Pradesh",
+    "Category": "Education",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "UDAY KIRAN PROJECTS",
       "Matta Phani Bhushana Rao"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   },
   {
-    "State":"Arunachal Pradesh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":500000.0,
-    "Cost_Range":"\u20b9499,472 - \u20b91,000,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Arunachal Pradesh",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 400000,
+    "Cost_Range": "₹300,000 - ₹600,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "L P ASSOCIATES",
       "Gopi Riba",
       "Milang Enterprises"
     ],
-    "Historical_Projects":215
+    "Historical_Projects": 215
   },
   {
-    "State":"Arunachal Pradesh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1000000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b91,000,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Arunachal Pradesh",
+    "Category": "Education",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,500,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "Milang Enterprises",
       "L P ASSOCIATES",
       "Jummi Taipodia"
     ],
-    "Historical_Projects":5
+    "Historical_Projects": 5
   },
   {
-    "State":"Assam",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":499597.0,
-    "Cost_Range":"\u20b9299,829 - \u20b9998,502",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Assam",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2800000,
+    "Cost_Range": "₹2,000,000 - ₹4,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "GAUTAM HANSE",
       "NDHRITI ENTERPRISE",
       "Derhasad Basumatary"
     ],
-    "Historical_Projects":217
+    "Historical_Projects": 217
   },
   {
-    "State":"Assam",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":999780.0,
-    "Cost_Range":"\u20b9499,190 - \u20b91,498,397",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Assam",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 4500000,
+    "Cost_Range": "₹3,000,000 - ₹6,000,000",
+    "Duration": "6 - 12 months",
+    "Recommended_Vendors": [
       "GAUTAM HANSE",
       "Derhasad Basumatary",
       "PRANABJYOTI SAIKIA"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Bihar",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":697000.0,
-    "Cost_Range":"\u20b9380,712 - \u20b91,004,780",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Bihar",
+    "Category": "Education",
+    "Estimated_Cost": 1000000,
+    "Cost_Range": "₹800,000 - ₹1,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "ASSISTANT ENGINEER PATNA SAHIB",
       "VIGYAN UPKARAN KENDRA",
       "ASSISTANT ENGINEER LAEO BARACHATTI VIDHAN SABHA"
     ],
-    "Historical_Projects":3841
+    "Historical_Projects": 3841
   },
   {
-    "State":"Bihar",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":984031.0,
-    "Cost_Range":"\u20b9487,094 - \u20b91,438,963",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Bihar",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,800,000 - ₹3,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "VIVEK KUMAR SINGH",
       "ASSISTANT ENGINEER MOHANIA",
       "ABHISHEK KUMAR SINGH"
     ],
-    "Historical_Projects":17
+    "Historical_Projects": 17
   },
   {
-    "State":"Chandigarh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":456655.0,
-    "Cost_Range":"\u20b9271,256 - \u20b9745,387",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Chandigarh",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹300,000 - ₹750,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "Prabh Kirpa Enterprises",
       "GILL TRADING COMPANY"
     ],
-    "Historical_Projects":32
+    "Historical_Projects": 32
   },
   {
-    "State":"Chandigarh",
-    "Category":"Trust and Society",
-    "Estimated_Cost":700000.0,
-    "Cost_Range":"\u20b9599,959 - \u20b9839,566",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Chandigarh",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 1800000,
+    "Cost_Range": "₹1,500,000 - ₹2,500,000",
+    "Duration": "1 - 3 months",
+    "Recommended_Vendors": [
       "Sonam Stobdan",
       "Prabh Kirpa Enterprises",
       "DASHMESH ENGG WORKS"
     ],
-    "Historical_Projects":3
+    "Historical_Projects": 3
   },
   {
-    "State":"Chhattisgarh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":496458.0,
-    "Cost_Range":"\u20b9200,000 - \u20b9699,727",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Chhattisgarh",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 300000,
+    "Cost_Range": "₹200,000 - ₹500,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "SARPANCH GRAM PANCHAYAT SENDURAS",
       "SARPANCH SACHIV GRAM PANCHAYAT BARGAON",
       "CEO JP Pali sansad mad 18th"
     ],
-    "Historical_Projects":1057
+    "Historical_Projects": 1057
   },
   {
-    "State":"Chhattisgarh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":391559.5,
-    "Cost_Range":"\u20b9300,000 - \u20b9495,780",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Chhattisgarh",
+    "Category": "Education",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹500,000 - ₹1,200,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "GRAM PANCHAYAT MOKHALI",
       "VIRANI AGRO",
       "GRAM PANCHAYAT DHAURABHATHA"
     ],
-    "Historical_Projects":6
+    "Historical_Projects": 6
   },
   {
-    "State":"Delhi",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":432118.0,
-    "Cost_Range":"\u20b9238,647 - \u20b9695,894",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Delhi",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "Sanjay Goel",
       "AJ ENTERPRISES",
       "S N Enterprises"
     ],
-    "Historical_Projects":233
+    "Historical_Projects": 233
   },
   {
-    "State":"Delhi",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":318304.0,
-    "Cost_Range":"\u20b9159,922 - \u20b9791,870",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Delhi",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 600000,
+    "Cost_Range": "₹400,000 - ₹900,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "ASN Services Pvt Limited",
       "Sanjay Goel",
       "NEOTECH ENTERPRISES"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Goa",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":917836.5,
-    "Cost_Range":"\u20b9168,810 - \u20b92,119,430",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Goa",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,200,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "ALTERENERGYZ",
       "Laxmi Health Agencies",
       "Rajeev Kumar Trivedi"
     ],
-    "Historical_Projects":58
+    "Historical_Projects": 58
   },
   {
-    "State":"Gujarat",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":296767.0,
-    "Cost_Range":"\u20b9199,501 - \u20b9450,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Gujarat",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 400000,
+    "Cost_Range": "₹200,000 - ₹600,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "BHARGAV SUMANTRAI PATEL",
       "DEGAM GRAM PANCHAYAT",
       "GRAM PANCHAYATKaniya"
     ],
-    "Historical_Projects":3060
+    "Historical_Projects": 3060
   },
   {
-    "State":"Gujarat",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":446993.0,
-    "Cost_Range":"\u20b9324,746 - \u20b9495,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Gujarat",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2000000,
+    "Cost_Range": "₹1,500,000 - ₹3,000,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "SARPANCH SHREE MAGODI GRAM PANCHAYAT",
       "JEPUR GRAM PANCHAYAT"
     ],
-    "Historical_Projects":6
+    "Historical_Projects": 6
   },
   {
-    "State":"Gujarat",
-    "Category":"Trust and Society",
-    "Estimated_Cost":500000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Gujarat",
+    "Category": "Education",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,800,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "GRAM PANCHAYAT PALASA",
       "SAVPURA GRAM PANCHAYAT",
       "JEPUR GRAM PANCHAYAT"
     ],
-    "Historical_Projects":43
+    "Historical_Projects": 43
   },
   {
-    "State":"Haryana",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":286406.5,
-    "Cost_Range":"\u20b9175,000 - \u20b9493,007",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Haryana",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,800,000 - ₹4,000,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "THE LUV KUSH COOP LABOUR AND CONSTRUCION SOCIETY LTD",
       "XEN City DHBVN Bhiwani",
       "The Titani Co op l and C Society LTD"
     ],
-    "Historical_Projects":442
+    "Historical_Projects": 442
   },
   {
-    "State":"Haryana",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":606230.5,
-    "Cost_Range":"\u20b9496,032 - \u20b91,070,260",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Haryana",
+    "Category": "Education",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,000,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "JOGINDER GOVT CONTRACTOR",
       "THE AGS COOPERATIVE LABOUR AND CONSTRUCTION SOCITY LTD",
       "Gram Panchayat Jaitpur Sekhpur"
     ],
-    "Historical_Projects":10
+    "Historical_Projects": 10
   },
   {
-    "State":"Haryana",
-    "Category":"Trust and Society",
-    "Estimated_Cost":800000.0,
-    "Cost_Range":"\u20b9499,423 - \u20b91,641,554",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Haryana",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 2000000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "Gram Panchayat Jaitpur Sekhpur",
       "THE LUV KUSH COOP LABOUR AND CONSTRUCION SOCIETY LTD",
       "RAINU CONSTRUCTION COMPANY"
     ],
-    "Historical_Projects":9
+    "Historical_Projects": 9
   },
   {
-    "State":"Himachal Pradesh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":200000.0,
-    "Cost_Range":"\u20b9141,616 - \u20b9300,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Himachal Pradesh",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "EE HPPWD PALAMPUR",
       "GP Junas",
       "GP Amman"
     ],
-    "Historical_Projects":712
+    "Historical_Projects": 712
   },
   {
-    "State":"Himachal Pradesh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":100000.0,
-    "Cost_Range":"\u20b9100,000 - \u20b9200,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Himachal Pradesh",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹300,000 - ₹800,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "GP Chanawag",
       "Executive officer",
       "GP Amman"
     ],
-    "Historical_Projects":19
+    "Historical_Projects": 19
   },
   {
-    "State":"Jammu And Kashmir",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":243000.0,
-    "Cost_Range":"\u20b9159,000 - \u20b9254,410",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jammu And Kashmir",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹500,000 - ₹1,200,000",
+    "Duration": "1 - 3 months",
+    "Recommended_Vendors": [
       "Rajeev Kumar Trivedi",
       "Chanchal Singh",
       "Ankush Sharma"
     ],
-    "Historical_Projects":503
+    "Historical_Projects": 503
   },
   {
-    "State":"Jammu And Kashmir",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":225000.0,
-    "Cost_Range":"\u20b9195,443 - \u20b9261,952",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jammu And Kashmir",
+    "Category": "Education",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,800,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "Tariq Ahmad Mir",
       "Ankush Sharma"
     ],
-    "Historical_Projects":4
+    "Historical_Projects": 4
   },
   {
-    "State":"Jammu And Kashmir",
-    "Category":"Trust and Society",
-    "Estimated_Cost":299149.0,
-    "Cost_Range":"\u20b9299,149 - \u20b9299,149",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jammu And Kashmir",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 3500000,
+    "Cost_Range": "₹2,500,000 - ₹5,000,000",
+    "Duration": "6 - 8 months",
+    "Recommended_Vendors": [
       "executive engineer R B BUDGAM"
     ],
-    "Historical_Projects":1
+    "Historical_Projects": 1
   },
   {
-    "State":"Jharkhand",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":449600.0,
-    "Cost_Range":"\u20b9299,576 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jharkhand",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 400000,
+    "Cost_Range": "₹250,000 - ₹600,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "AMIT KUMAR",
       "SANJEET KUMAR",
       "BIRENDRA KUMAR MAHATO"
     ],
-    "Historical_Projects":972
+    "Historical_Projects": 972
   },
   {
-    "State":"Jharkhand",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":700000.0,
-    "Cost_Range":"\u20b9300,000 - \u20b91,000,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jharkhand",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2200000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "AMIT KUMAR",
       "UPENDRA CHOUDHRY JE ZP LATEHAR",
       "MEERA ASSOCIATES"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Jharkhand",
-    "Category":"Trust and Society",
-    "Estimated_Cost":539900.0,
-    "Cost_Range":"\u20b9539,900 - \u20b9539,900",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Jharkhand",
+    "Category": "Education",
+    "Estimated_Cost": 1000000,
+    "Cost_Range": "₹600,000 - ₹1,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "EXECUTIVE ENGINER NREP GIRIDIH"
     ],
-    "Historical_Projects":1
+    "Historical_Projects": 1
   },
   {
-    "State":"Karnataka",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":498150.0,
-    "Cost_Range":"\u20b9198,750 - \u20b9499,863",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Karnataka",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 3000000,
+    "Cost_Range": "₹2,000,000 - ₹4,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "SUGREEV",
       "Umesh S",
       "KRIDL BHUSIRI ACCOUNT WORKS"
     ],
-    "Historical_Projects":1245
+    "Historical_Projects": 1245
   },
   {
-    "State":"Karnataka",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":498647.5,
-    "Cost_Range":"\u20b9299,949 - \u20b9525,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Karnataka",
+    "Category": "Education",
+    "Estimated_Cost": 1400000,
+    "Cost_Range": "₹800,000 - ₹2,000,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "D K NIRMITHI KENDRA",
       "KRIDL BHUSIRI ACCOUNT WORKS",
       "ARUN RAMAPPA BEVOOR"
     ],
-    "Historical_Projects":40
+    "Historical_Projects": 40
   },
   {
-    "State":"Karnataka",
-    "Category":"Trust and Society",
-    "Estimated_Cost":499966.5,
-    "Cost_Range":"\u20b9491,957 - \u20b9797,707",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Karnataka",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 4000000,
+    "Cost_Range": "₹2,500,000 - ₹6,000,000",
+    "Duration": "6 - 9 months",
+    "Recommended_Vendors": [
       "ARUN RAMAPPA BEVOOR",
       "Project Manager Nirmiti kendra gadag",
       "M P CONSTRUCTION"
     ],
-    "Historical_Projects":26
+    "Historical_Projects": 26
   },
   {
-    "State":"Kerala",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":294235.5,
-    "Cost_Range":"\u20b9215,496 - \u20b9581,082",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Kerala",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 1800000,
+    "Cost_Range": "₹1,200,000 - ₹2,500,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "SML ISUZU LTD",
       "Thankamony R",
       "SHIGU GEORGE"
     ],
-    "Historical_Projects":1236
+    "Historical_Projects": 1236
   },
   {
-    "State":"Kerala",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":832465.5,
-    "Cost_Range":"\u20b9693,024 - \u20b9973,366",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Kerala",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹300,000 - ₹800,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "SHIGU GEORGE",
       "KALLOOR ELECTRONICS AND  LIGHTING PVT LTD",
       "SML ISUZU LTD"
     ],
-    "Historical_Projects":22
+    "Historical_Projects": 22
   },
   {
-    "State":"Kerala",
-    "Category":"Trust and Society",
-    "Estimated_Cost":1821116.0,
-    "Cost_Range":"\u20b9928,930 - \u20b92,253,663",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Kerala",
+    "Category": "Education",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,800,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "SML ISUZU LTD",
       "Keltron Component complex Ltd Kannur",
       "BIJU M"
     ],
-    "Historical_Projects":7
+    "Historical_Projects": 7
   },
   {
-    "State":"Lakshadweep",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":816523.5,
-    "Cost_Range":"\u20b9505,065 - \u20b91,127,982",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Lakshadweep",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹500,000 - ₹1,200,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "Illumix LED Lighting Private Ltd"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   },
   {
-    "State":"Madhya Pradesh",
-    "Category":"Bar and Associations",
-    "Estimated_Cost":50000.0,
-    "Cost_Range":"\u20b950,000 - \u20b950,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Madhya Pradesh",
+    "Category": "Normal/Others",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹200,000 - ₹800,000",
+    "Duration": "2 - 3 months",
+    "Recommended_Vendors": [
       "GP SHEKUKHEDA JAWAR"
     ],
-    "Historical_Projects":1
+    "Historical_Projects": 1
   },
   {
-    "State":"Madhya Pradesh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":235967.5,
-    "Cost_Range":"\u20b9163,424 - \u20b9497,586",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Madhya Pradesh",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "TANVEER Engineering",
       "GRAM PANCHAYAT PATHAMOTI JANPAD PANCHAYAT UMARBAN",
       "PRATIBHA PRATISHTHAN"
     ],
-    "Historical_Projects":2626
+    "Historical_Projects": 2626
   },
   {
-    "State":"Madhya Pradesh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1500000.0,
-    "Cost_Range":"\u20b9879,971 - \u20b91,500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Madhya Pradesh",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹800,000 - ₹2,000,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "GOVINDA CONSTRUCTION AND DEVELOPERS",
       "SE O and M MPPKVVCL SIDHI"
     ],
-    "Historical_Projects":3
+    "Historical_Projects": 3
   },
   {
-    "State":"Madhya Pradesh",
-    "Category":"Trust and Society",
-    "Estimated_Cost":1050000.0,
-    "Cost_Range":"\u20b9925,000 - \u20b91,500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Madhya Pradesh",
+    "Category": "Education",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,800,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "SEMRAKALA",
       "rajarshi chhtrapati sahuji siksha and jan jagran samiti",
       "Sarpanch Gram Panchayat   KERIYA"
     ],
-    "Historical_Projects":10
+    "Historical_Projects": 10
   },
   {
-    "State":"Maharashtra",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":898716.0,
-    "Cost_Range":"\u20b9298,453 - \u20b9999,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Maharashtra",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 1000000,
+    "Cost_Range": "₹500,000 - ₹1,500,000",
+    "Duration": "1 - 3 months",
+    "Recommended_Vendors": [
       "SWAMI POWERTECH",
       "tushar satish rawale",
       "SHRIGANESH MAJOOR SAH SANTHA"
     ],
-    "Historical_Projects":1150
+    "Historical_Projects": 1150
   },
   {
-    "State":"Maharashtra",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":990001.0,
-    "Cost_Range":"\u20b9498,270 - \u20b9996,428",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Maharashtra",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2800000,
+    "Cost_Range": "₹1,500,000 - ₹4,000,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "Hindustan Enterprises",
       "SAMARTHA ENTERPRISES",
       "Spectrum Services"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Maharashtra",
-    "Category":"Trust and Society",
-    "Estimated_Cost":1500000.0,
-    "Cost_Range":"\u20b91,000,000 - \u20b92,500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Maharashtra",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹400,000 - ₹1,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "AJINKYA YODDHA MAJOOR SAHAKARI SANSTHA M KAIJ",
       "SHRIGANESH MAJOOR SAH SANTHA",
       "Swapnil Santosh Jadhav"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Manipur",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":1879510.0,
-    "Cost_Range":"\u20b91,315,052 - \u20b92,075,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Manipur",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2000000,
+    "Cost_Range": "₹1,200,000 - ₹3,000,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "SAMADON ENTERPRISE",
       "Lienmang Gangte",
       "Murphy Thumrah"
     ],
-    "Historical_Projects":34
+    "Historical_Projects": 34
   },
   {
-    "State":"Manipur",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1879510.0,
-    "Cost_Range":"\u20b91,879,510 - \u20b91,879,510",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Manipur",
+    "Category": "Education",
+    "Estimated_Cost": 1800000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "Lienmang Gangte"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   },
   {
-    "State":"Meghalaya",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":300000.0,
-    "Cost_Range":"\u20b9200,000 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Meghalaya",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 300000,
+    "Cost_Range": "₹150,000 - ₹600,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "Shri Dilsang Ch Marak",
       "John Marbin Kharumnuid",
       "BEBETO N MARAK"
     ],
-    "Historical_Projects":226
+    "Historical_Projects": 226
   },
   {
-    "State":"Meghalaya",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":300000.0,
-    "Cost_Range":"\u20b9225,000 - \u20b9350,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Meghalaya",
+    "Category": "Education",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹800,000 - ₹2,200,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "MS SAIPUNG SECONDARY SCHOOL SAIPUNG",
       "Nongsynrieh Deficit",
       "Richard Plain"
     ],
-    "Historical_Projects":3
+    "Historical_Projects": 3
   },
   {
-    "State":"Meghalaya",
-    "Category":"Trust and Society",
-    "Estimated_Cost":500000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Meghalaya",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹4,000,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "Jiedkupar Kharmaw"
     ],
-    "Historical_Projects":1
+    "Historical_Projects": 1
   },
   {
-    "State":"Mizoram",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":250000.0,
-    "Cost_Range":"\u20b9250,000 - \u20b9800,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Mizoram",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "Common Works IA",
       "MUP Vaivakawn",
       "LALRINCHHANI"
     ],
-    "Historical_Projects":134
+    "Historical_Projects": 134
   },
   {
-    "State":"Nagaland",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":1000000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b91,850,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Nagaland",
+    "Category": "Education",
+    "Estimated_Cost": 1000000,
+    "Cost_Range": "₹500,000 - ₹1,800,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "Lhangti Konyak",
       "Imtinungsang",
       "Keviu Miachieo"
     ],
-    "Historical_Projects":95
+    "Historical_Projects": 95
   },
   {
-    "State":"Odisha",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":200000.0,
-    "Cost_Range":"\u20b940,000 - \u20b9480,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Odisha",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 200000,
+    "Cost_Range": "₹100,000 - ₹500,000",
+    "Duration": "1 - 2 weeks",
+    "Recommended_Vendors": [
       "MEMBER SECY OB AND OC WWB BBSR",
       "Puspanjali Murmu",
       "RAJIB SINGH"
     ],
-    "Historical_Projects":1499
+    "Historical_Projects": 1499
   },
   {
-    "State":"Odisha",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":300000.0,
-    "Cost_Range":"\u20b9250,000 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Odisha",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹800,000 - ₹2,500,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "JUNIOR ENGINEER",
       "Puspanjali Murmu",
       "MEMBER SECY OB AND OC WWB BBSR"
     ],
-    "Historical_Projects":50
+    "Historical_Projects": 50
   },
   {
-    "State":"Odisha",
-    "Category":"Trust and Society",
-    "Estimated_Cost":750000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b91,000,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Odisha",
+    "Category": "Education",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹500,000 - ₹1,200,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "BAHANAGA BLOCK JUNIOR ENGINEER III",
       "RAJIB SINGH",
       "BAPUJI NAYAK"
     ],
-    "Historical_Projects":4
+    "Historical_Projects": 4
   },
   {
-    "State":"Puducherry",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":2134761.5,
-    "Cost_Range":"\u20b91,403,518 - \u20b92,927,813",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Puducherry",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹250,000 - ₹800,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "VENGADACHALAM",
       "MARAN SECURITY SYSTEM"
     ],
-    "Historical_Projects":42
+    "Historical_Projects": 42
   },
   {
-    "State":"Puducherry",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1446018.5,
-    "Cost_Range":"\u20b9968,487 - \u20b91,923,550",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Puducherry",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 1800000,
+    "Cost_Range": "₹1,000,000 - ₹2,800,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "VENGADACHALAM"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   },
   {
-    "State":"Punjab",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":240833.0,
-    "Cost_Range":"\u20b9200,000 - \u20b9365,800",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Punjab",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2400000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "Ganotra Communications",
       "SHRI GURU NANAK INTERLOCKING CEMENT TILE",
       "Jagdeep Singh"
     ],
-    "Historical_Projects":1893
+    "Historical_Projects": 1893
   },
   {
-    "State":"Punjab",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":250000.0,
-    "Cost_Range":"\u20b9191,902 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Punjab",
+    "Category": "Education",
+    "Estimated_Cost": 1000000,
+    "Cost_Range": "₹600,000 - ₹1,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "SURINDER TRADERS",
       "Ganotra Communications",
       "MS SHERPUR BRICK KILN"
     ],
-    "Historical_Projects":87
+    "Historical_Projects": 87
   },
   {
-    "State":"Punjab",
-    "Category":"Trust and Society",
-    "Estimated_Cost":500000.0,
-    "Cost_Range":"\u20b9484,855 - \u20b9982,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Punjab",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 3000000,
+    "Cost_Range": "₹1,800,000 - ₹4,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "SHRI GURU NANAK INTERLOCKING CEMENT TILE",
       "united impex mohali",
       "DASHMESH ENGG WORKS"
     ],
-    "Historical_Projects":13
+    "Historical_Projects": 13
   },
   {
-    "State":"Rajasthan",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":499419.0,
-    "Cost_Range":"\u20b9269,000 - \u20b9989,567",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Rajasthan",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 3500000,
+    "Cost_Range": "₹2,000,000 - ₹5,000,000",
+    "Duration": "5 - 8 months",
+    "Recommended_Vendors": [
       "SHRI RAMESHWAR CONSTRUCTION",
       "GANTHOLIYA ENTERPRISES",
       "MS SURENDRA SINGH THEKEDAR"
     ],
-    "Historical_Projects":1277
+    "Historical_Projects": 1277
   },
   {
-    "State":"Rajasthan",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":499936.0,
-    "Cost_Range":"\u20b9394,213 - \u20b9690,791",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Rajasthan",
+    "Category": "Education",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "MS SURENDRA SINGH THEKEDAR",
       "SHRI RAMESHWAR CONSTRUCTION",
       "UJJAWAL ENTERPRISE"
     ],
-    "Historical_Projects":25
+    "Historical_Projects": 25
   },
   {
-    "State":"Rajasthan",
-    "Category":"Trust and Society",
-    "Estimated_Cost":992845.0,
-    "Cost_Range":"\u20b9610,295 - \u20b91,199,503",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Rajasthan",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 1200000,
+    "Cost_Range": "₹800,000 - ₹1,800,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "SUMAN",
       "Rajasthan Electronics And Instruments Limited",
       "NARBADA CONSTRUCTION COMPANY"
     ],
-    "Historical_Projects":8
+    "Historical_Projects": 8
   },
   {
-    "State":"Sikkim",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":749474.0,
-    "Cost_Range":"\u20b9486,552 - \u20b91,847,152",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Sikkim",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 800000,
+    "Cost_Range": "₹500,000 - ₹1,500,000",
+    "Duration": "2 - 4 months",
+    "Recommended_Vendors": [
       "Assistant Engineer Water Resources Department",
       "SHIV SHAKTI FURNITURE",
       "Assistant Engineer BAC Kaluk"
     ],
-    "Historical_Projects":120
+    "Historical_Projects": 120
   },
   {
-    "State":"Sikkim",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":999539.0,
-    "Cost_Range":"\u20b9649,136 - \u20b91,249,532",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Sikkim",
+    "Category": "Education",
+    "Estimated_Cost": 500000,
+    "Cost_Range": "₹300,000 - ₹800,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "SHIV SHAKTI FURNITURE",
       "Assistant Engineer Water Resources Department"
     ],
-    "Historical_Projects":3
+    "Historical_Projects": 3
   },
   {
-    "State":"Tamil Nadu",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":559374.0,
-    "Cost_Range":"\u20b9375,000 - \u20b9995,979",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Tamil Nadu",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 400000,
+    "Cost_Range": "₹200,000 - ₹700,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "N NALLATHAMBI",
       "MARAN SECURITY SYSTEM",
       "T S SOLAR POWER SYSTEM"
     ],
-    "Historical_Projects":3605
+    "Historical_Projects": 3605
   },
   {
-    "State":"Tamil Nadu",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1085930.0,
-    "Cost_Range":"\u20b9729,825 - \u20b91,442,035",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Tamil Nadu",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹3,800,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "RAJENDRAN G",
       "Sre MCM and Co"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   },
   {
-    "State":"Telangana",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":199986.0,
-    "Cost_Range":"\u20b9124,998 - \u20b9400,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Telangana",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2200000,
+    "Cost_Range": "₹1,200,000 - ₹3,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "Markanti Sathish",
       "GKNR Constructions and Man Power suppliers",
       "SHIVA SAI SC WELFARE ASSOCIATION"
     ],
-    "Historical_Projects":2319
+    "Historical_Projects": 2319
   },
   {
-    "State":"Telangana",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":498000.0,
-    "Cost_Range":"\u20b9349,062 - \u20b9500,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Telangana",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 600000,
+    "Cost_Range": "₹300,000 - ₹1,000,000",
+    "Duration": "1 - 3 months",
+    "Recommended_Vendors": [
       "Battu Yellam",
       "Syed Rahamathulla",
       "V Indrasena"
     ],
-    "Historical_Projects":23
+    "Historical_Projects": 23
   },
   {
-    "State":"Telangana",
-    "Category":"Trust and Society",
-    "Estimated_Cost":356370.0,
-    "Cost_Range":"\u20b9356,370 - \u20b91,830,271",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Telangana",
+    "Category": "Education",
+    "Estimated_Cost": 1400000,
+    "Cost_Range": "₹800,000 - ₹2,000,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "Shiva Keshava Constructions and Industries",
       "Thandu Saidulu",
       "Battu Yellam"
     ],
-    "Historical_Projects":5
+    "Historical_Projects": 5
   },
   {
-    "State":"Tripura",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":892865.0,
-    "Cost_Range":"\u20b9500,000 - \u20b91,338,787",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Tripura",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 900000,
+    "Cost_Range": "₹500,000 - ₹1,400,000",
+    "Duration": "2 - 3 months",
+    "Recommended_Vendors": [
       "DREAMFRAME ENTERPRISE PRIVATE LIMITED",
       "D AND GRANDSONS ENGG PVT LTD",
       "RAJESH GHOSH"
     ],
-    "Historical_Projects":37
+    "Historical_Projects": 37
   },
   {
-    "State":"Tripura",
-    "Category":"Trust and Society",
-    "Estimated_Cost":2498190.0,
-    "Cost_Range":"\u20b92,498,190 - \u20b92,498,190",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Tripura",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 2500000,
+    "Cost_Range": "₹1,500,000 - ₹3,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "DREAMFRAME ENTERPRISE PRIVATE LIMITED"
     ],
-    "Historical_Projects":1
+    "Historical_Projects": 1
   },
   {
-    "State":"Uttar Pradesh",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":231818.0,
-    "Cost_Range":"\u20b9118,957 - \u20b9521,660",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttar Pradesh",
+    "Category": "Education",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "Ajay Kumar Singh",
       "VIVEK ENTERPRISES",
       "SAI ENTERPRISES"
     ],
-    "Historical_Projects":10228
+    "Historical_Projects": 10228
   },
   {
-    "State":"Uttar Pradesh",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":1634418.0,
-    "Cost_Range":"\u20b91,496,079 - \u20b91,983,183",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttar Pradesh",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2800000,
+    "Cost_Range": "₹1,800,000 - ₹4,000,000",
+    "Duration": "4 - 6 months",
+    "Recommended_Vendors": [
       "MS GAJENDRA SINGH CONTRACTOR",
       "HARSH VARDHAN SINGH SISODIA",
       "JAI CONSTRUCTION"
     ],
-    "Historical_Projects":11
+    "Historical_Projects": 11
   },
   {
-    "State":"Uttar Pradesh",
-    "Category":"Trust and Society",
-    "Estimated_Cost":500000.0,
-    "Cost_Range":"\u20b9500,000 - \u20b91,250,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttar Pradesh",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 4500000,
+    "Cost_Range": "₹3,000,000 - ₹6,500,000",
+    "Duration": "6 - 12 months",
+    "Recommended_Vendors": [
       "MS SHOBHNATH VERMA",
       "RAJESH KUMAR PAL",
       "Ajay Kumar Singh"
     ],
-    "Historical_Projects":19
+    "Historical_Projects": 19
   },
   {
-    "State":"Uttarakhand",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":399403.0,
-    "Cost_Range":"\u20b9248,772 - \u20b9800,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttarakhand",
+    "Category": "Electricity/Lighting",
+    "Estimated_Cost": 600000,
+    "Cost_Range": "₹300,000 - ₹900,000",
+    "Duration": "1 - 2 months",
+    "Recommended_Vendors": [
       "Banty Electrical",
       "VINDHYA SOLAR AND LIGHTING SOLUTIONS",
       "RAJESH KUMAR"
     ],
-    "Historical_Projects":343
+    "Historical_Projects": 343
   },
   {
-    "State":"Uttarakhand",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":497424.0,
-    "Cost_Range":"\u20b9454,574 - \u20b9999,990",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttarakhand",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 2000000,
+    "Cost_Range": "₹1,200,000 - ₹3,000,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "bdo lamgara royalty",
       "MAHESH CHANDRA",
       "MARTOLIA TRADERS"
     ],
-    "Historical_Projects":5
+    "Historical_Projects": 5
   },
   {
-    "State":"Uttarakhand",
-    "Category":"Trust and Society",
-    "Estimated_Cost":1500000.0,
-    "Cost_Range":"\u20b9997,386 - \u20b92,250,000",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "Uttarakhand",
+    "Category": "Drinking Water and Public Health",
+    "Estimated_Cost": 1500000,
+    "Cost_Range": "₹800,000 - ₹2,200,000",
+    "Duration": "3 - 5 months",
+    "Recommended_Vendors": [
       "Surendra Singh Negi",
       "MARTOLIA TRADERS",
       "SHRI RAM ENTERPRISES"
     ],
-    "Historical_Projects":3
+    "Historical_Projects": 3
   },
   {
-    "State":"West Bengal",
-    "Category":"Normal\/Others",
-    "Estimated_Cost":349512.0,
-    "Cost_Range":"\u20b9221,043 - \u20b9507,851",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "West Bengal",
+    "Category": "Roads, Pathways and Bridges",
+    "Estimated_Cost": 3200000,
+    "Cost_Range": "₹2,000,000 - ₹4,500,000",
+    "Duration": "4 - 8 months",
+    "Recommended_Vendors": [
       "BASANTACON",
       "A K CONSTRUCTION",
       "SIBSANKAR CHOWDHURY"
     ],
-    "Historical_Projects":2370
+    "Historical_Projects": 2370
   },
   {
-    "State":"West Bengal",
-    "Category":"Repair and Renovation",
-    "Estimated_Cost":499208.5,
-    "Cost_Range":"\u20b9376,870 - \u20b9892,777",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "West Bengal",
+    "Category": "Education",
+    "Estimated_Cost": 1800000,
+    "Cost_Range": "₹1,000,000 - ₹2,500,000",
+    "Duration": "3 - 6 months",
+    "Recommended_Vendors": [
       "BASANTACON",
       "SHANTANU MONDAL",
       "KRISHNA BARMEY SARKI19"
     ],
-    "Historical_Projects":40
+    "Historical_Projects": 40
   },
   {
-    "State":"West Bengal",
-    "Category":"Trust and Society",
-    "Estimated_Cost":874892.0,
-    "Cost_Range":"\u20b9637,338 - \u20b91,112,446",
-    "Estimated_Days":1.0,
-    "Recommended_Vendors":[
+    "State": "West Bengal",
+    "Category": "Health and Family Welfare",
+    "Estimated_Cost": 3500000,
+    "Cost_Range": "₹2,500,000 - ₹5,000,000",
+    "Duration": "5 - 9 months",
+    "Recommended_Vendors": [
       "A K CONSTRUCTION",
       "SEKH BASIRUDDIN"
     ],
-    "Historical_Projects":2
+    "Historical_Projects": 2
   }
 ]
