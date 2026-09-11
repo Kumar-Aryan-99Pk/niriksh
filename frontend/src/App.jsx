@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Map, Users, BarChart3, MessageSquare, Sparkles } from 'lucide-react';
+import { LayoutDashboard, Map, Users, BarChart3, MessageSquare, Sparkles, HardHat, Building } from 'lucide-react';
 import Dashboard from './pages/Dashboard';
 import RiskCenter from './pages/RiskCenter';
 import StatePerformance from './pages/StatePerformance';
