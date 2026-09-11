@@ -1,0 +1,281 @@
+/* Core Design Tokens matching the Civic Ledger Theme */
+:root {
+  --navy: #14213D;
+  --sage: #3F6B4F;
+  --gold: #B4872A;
+  --paper: #FDFBF7;
+  --paper-alt: #F4EFE6;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --line: #E5E5E5;
+  --line-strong: #D4D4D4;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Base Container Styling */
+.vendor-page-container {
+  font-family: var(--font-body);
+  color: var(--ink);
+  box-sizing: border-box;
+}
+
+.auth-background {
+  padding: clamp(16px, 3vw, 48px);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+}
+
+.dashboard-container {
+  padding: clamp(16px, 3vw, 32px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Structures */
+.vendor-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.auth-card {
+  max-width: 500px;
+  width: 100%;
+  background: var(--paper-alt);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 12px 24px rgba(20,33,61,0.08);
+}
+
+/* Form Elements */
+.auth-toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: var(--ink-soft);
+}
+
+.auth-toggle-btn.active {
+  background: var(--navy);
+  color: #fff;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--sage);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #2f523c;
+}
+
+/* Dashboard Layout */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.logout-btn:hover {
+  background: var(--line);
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  padding: 24px;
+}
+
+.tier-card {
+  background: var(--paper-alt);
+  border-color: var(--line-strong);
+  border-top: 4px solid var(--sage);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.metric-value.trust-score {
+  font-size: 2.5rem;
+  color: var(--sage);
+}
+
+.metric-value.trust-score span {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.metric-subtext {
+  font-size: 0.9rem;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metric-subtext.alt {
+  color: var(--ink-soft);
+}
+
+/* Active Works List */
+.works-list {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+
+.work-item {
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-details {
+  flex: 1 1 300px;
+}
+
+.work-meta {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  margin-bottom: 4px;
+}
+
+.work-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.work-tags {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.work-tags span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.work-action {
+  flex-shrink: 0;
+}
+
+.eoi-btn {
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.eoi-btn:hover {
+  background: #1e325c;
+}
+
+.submitted-badge {
+  background: var(--paper-alt);
+  color: var(--sage);
+  border: 1px solid var(--sage);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

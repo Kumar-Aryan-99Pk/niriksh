@@ -10,6 +10,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import MpProfile from './pages/MpProfile';
 import OfficerCopilot from './pages/OfficerCopilot'; // <-- Added Import
 import FeedbackPage from './pages/FeedbackPage'; // <-- Add this import
+import VendorPortal from './pages/VendorPortal';
 import './index.css'; 
 import Footer from './components/Footer';
 import VendorRegistry from './pages/VendorRegistry';
@@ -62,6 +63,7 @@ function TopNav({ houseFilter, setHouseFilter }) {
         <NavLink to="/mps"><Users size={18} /> Browse MPs</NavLink>
         <NavLink to="/compare"><BarChart3 size={18} /> Compare</NavLink>
         <NavLink to="/vendors"><HardHat size={18} /> Agencies</NavLink>
+        <NavLink to="/vendor-portal"><Building size={18} /> Vendor Portal</NavLink> {/* <-- Added Link */}
         <NavLink to="/copilot"><Sparkles size={18} /> AI Copilot</NavLink> {/* <-- Added Link */}
         <NavLink to="/feedback"><MessageSquare size={18} /> Feedback</NavLink>
         
@@ -113,6 +115,7 @@ function App() {
             <Route path="/feedback" element={<FeedbackPage />} />
             <Route path="/mp/:mpName" element={<MpProfile />} />
             <Route path="/vendors" element={<VendorRegistry />} /> {/* <-- ADD THIS */}
+            <Route path="/vendor-portal" element={<VendorPortal />} /> {/* <-- Added Route */}
             <Route path="/copilot" element={<OfficerCopilot />} /> {/* <-- Fixed Route Syntax */}
           </Routes>
         </main>
