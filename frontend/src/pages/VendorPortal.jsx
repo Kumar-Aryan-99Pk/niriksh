@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './VendorPortal.css';
+import '../VendorPortal.css';
 import { 
   ShieldCheck, HardHat, FileText, CheckCircle2, 
   Building, Award, LogIn, ArrowRight, 
