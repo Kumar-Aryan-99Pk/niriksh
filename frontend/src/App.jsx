@@ -14,7 +14,6 @@ import VendorPortal from './pages/VendorPortal';
 import './index.css'; 
 import Footer from './components/Footer';
 import VendorRegistry from './pages/VendorRegistry';
-import { HardHat } from 'lucide-react'; // Import icon for the nav link
 function NavLink({ to, children }) {
   const location = useLocation();
   const isActive = location.pathname === to;
