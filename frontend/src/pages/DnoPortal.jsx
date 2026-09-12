@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import { ShieldCheck, MapPin, AlertCircle, Camera, CheckCircle2, Search, LogIn, Filter } from 'lucide-react';
+import { ShieldCheck, MapPin, Camera, CheckCircle2, AlertTriangle } from 'lucide-react';
 
 export default function DnoPortal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [email, setEmail] = useState('dno@ranchi.gov.in');
+  const [password, setPassword] = useState('admin123');
+  const [error, setError] = useState('');
 
-  // Dummy State for Auth
   const handleAuth = (e) => {
     e.preventDefault();
-    setIsLoggedIn(true);
+    // Hardcoded verification for the demo
+    if (email === 'dno@ranchi.gov.in' && password === 'admin123') {
+      setIsLoggedIn(true);
+      setError('');
+    } else {
+      setError('Unauthorized access. Invalid official credentials.');
+    }
   };
 
   // Mock Citizen Complaints Data
@@ -21,6 +29,9 @@ export default function DnoPortal() {
     setComplaints(complaints.map(c => c.id === id ? { ...c, status: 'Verified & Escalated' } : c));
   };
 
+  // Filter out IT/System complaints. DNOs should only see physical project-related grievances.
+  const dnoComplaints = complaints.filter(c => c.type !== 'System Bug' && c.type !== 'General Feedback');
+
   if (!isLoggedIn) {
     return (
       <div className="page-container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--paper)' }}>
@@ -30,16 +41,40 @@ export default function DnoPortal() {
             <h2 style={{ margin: '0 0 8px 0', color: 'var(--navy)' }}>DNO Authorized Login</h2>
             <p style={{ color: 'var(--ink-soft)', fontSize: '0.9rem' }}>Central Grievance Redressal System</p>
           </div>
+
+          {error && (
+            <div style={{ background: '#fee2e2', color: '#991b1b', padding: '12px', borderRadius: '6px', marginBottom: '16px', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: '600' }}>
+              <AlertTriangle size={16} /> {error}
+            </div>
+          )}
           
-          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600' }}>Official Email / DNO ID</label>
-          <input type="text" placeholder="dno.district@gov.in" required style={{ width: '100%', padding: '12px', marginBottom: '16px', borderRadius: '6px', border: '1px solid var(--line-strong)' }} />
+          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: 'var(--navy)' }}>Official Email / DNO ID</label>
+          <input 
+            type="text" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="dno.district@gov.in" 
+            required 
+            style={{ width: '100%', padding: '12px', marginBottom: '16px', borderRadius: '6px', border: '1px solid var(--line-strong)', outline: 'none' }} 
+          />
           
-          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600' }}>Secure Password</label>
-          <input type="password" placeholder="••••••••" required style={{ width: '100%', padding: '12px', marginBottom: '24px', borderRadius: '6px', border: '1px solid var(--line-strong)' }} />
+          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: 'var(--navy)' }}>Secure Password</label>
+          <input 
+            type="password" 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••" 
+            required 
+            style={{ width: '100%', padding: '12px', marginBottom: '24px', borderRadius: '6px', border: '1px solid var(--line-strong)', outline: 'none' }} 
+          />
           
-          <button type="submit" style={{ width: '100%', padding: '12px', background: 'var(--navy)', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: '600', cursor: 'pointer' }}>
+          <button type="submit" style={{ width: '100%', padding: '12px', background: 'var(--navy)', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: '600', cursor: 'pointer', transition: 'background 0.2s' }}>
             Authenticate
           </button>
+
+          <div style={{ textAlign: 'center', marginTop: '16px', fontSize: '0.85rem', color: 'var(--ink-soft)' }}>
+            Demo Credentials: <strong>dno@ranchi.gov.in</strong> / <strong>admin123</strong>
+          </div>
         </form>
       </div>
     );
@@ -58,7 +93,7 @@ export default function DnoPortal() {
       </div>
 
       <div style={{ display: 'grid', gap: '20px' }}>
-        {complaints.map((complaint) => {
+        {dnoComplaints.map((complaint) => {
           const isCritical = complaint.severity === 'Critical';
           const isPending = complaint.status === 'Pending Verification';
           
@@ -100,6 +135,11 @@ export default function DnoPortal() {
             </div>
           );
         })}
+        {dnoComplaints.length === 0 && (
+          <div style={{ textAlign: 'center', padding: '40px', color: 'var(--ink-soft)' }}>
+            No project discrepancies currently require verification.
+          </div>
+        )}
       </div>
     </div>
   );
