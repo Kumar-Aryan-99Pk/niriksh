@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, MapPin, Camera, CheckCircle2, AlertTriangle } from 'lucide-react';
+import { ShieldCheck, MapPin, Camera, CheckCircle2, AlertTriangle, XCircle } from 'lucide-react';
 
 export default function DnoPortal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -9,7 +9,6 @@ export default function DnoPortal() {
 
   const handleAuth = (e) => {
     e.preventDefault();
-    // Hardcoded verification for the demo
     if (email === 'dno@ranchi.gov.in' && password === 'admin123') {
       setIsLoggedIn(true);
       setError('');
@@ -18,7 +17,6 @@ export default function DnoPortal() {
     }
   };
 
-  // Mock Citizen Complaints Data
   const [complaints, setComplaints] = useState([
     { id: 'GRV-7721', type: 'Project Complaint', location: 'Ward 4 CC Road', severity: 'Critical', citizen: 'Rahul S.', date: 'Today, 10:45 AM', desc: 'The concrete mix used is extremely poor. Cracks have appeared just 2 days after laying the road.', status: 'Pending Verification', hasEvidence: true },
     { id: 'GRV-7722', type: 'Data Discrepancy', location: 'Govt Primary School', severity: 'Moderate', citizen: 'Anita K.', date: 'Yesterday', desc: 'Portal shows project is 100% complete, but the boundary wall is only half finished.', status: 'Pending Verification', hasEvidence: true },
@@ -29,7 +27,10 @@ export default function DnoPortal() {
     setComplaints(complaints.map(c => c.id === id ? { ...c, status: 'Verified & Escalated' } : c));
   };
 
-  // Filter out IT/System complaints. DNOs should only see physical project-related grievances.
+  const rejectComplaint = (id) => {
+    setComplaints(complaints.map(c => c.id === id ? { ...c, status: 'Rejected / Invalid' } : c));
+  };
+
   const dnoComplaints = complaints.filter(c => c.type !== 'System Bug' && c.type !== 'General Feedback');
 
   if (!isLoggedIn) {
@@ -96,6 +97,7 @@ export default function DnoPortal() {
         {dnoComplaints.map((complaint) => {
           const isCritical = complaint.severity === 'Critical';
           const isPending = complaint.status === 'Pending Verification';
+          const isRejected = complaint.status === 'Rejected / Invalid';
           
           return (
             <div key={complaint.id} style={{ background: '#fff', border: `1px solid ${isCritical ? '#fca5a5' : 'var(--line-strong)'}`, borderRadius: '12px', padding: '24px', display: 'flex', gap: '24px', flexWrap: 'wrap', borderLeft: `6px solid ${isCritical ? '#ef4444' : complaint.severity === 'Moderate' ? '#f59e0b' : '#22c55e'}` }}>
@@ -122,10 +124,14 @@ export default function DnoPortal() {
                     <button onClick={() => verifyComplaint(complaint.id)} style={{ width: '100%', padding: '10px', background: 'var(--navy)', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: '600', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
                       <CheckCircle2 size={16} /> Verify Evidence
                     </button>
-                    <button style={{ width: '100%', padding: '10px', background: 'transparent', color: 'var(--ink)', border: '1px solid var(--line-strong)', borderRadius: '6px', fontWeight: '500', cursor: 'pointer' }}>
-                      Reject / Invalid
+                    <button onClick={() => rejectComplaint(complaint.id)} style={{ width: '100%', padding: '10px', background: 'transparent', color: 'var(--ink)', border: '1px solid var(--line-strong)', borderRadius: '6px', fontWeight: '500', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', transition: 'background 0.2s' }}>
+                      <XCircle size={16} /> Reject / Invalid
                     </button>
                   </>
+                ) : isRejected ? (
+                  <div style={{ background: '#fee2e2', color: '#991b1b', padding: '10px', borderRadius: '6px', textAlign: 'center', fontWeight: '600', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+                    <XCircle size={18} /> {complaint.status}
+                  </div>
                 ) : (
                   <div style={{ background: '#dcfce7', color: '#166534', padding: '10px', borderRadius: '6px', textAlign: 'center', fontWeight: '600', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
                     <CheckCircle2 size={18} /> {complaint.status}
