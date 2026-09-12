@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, Send, User, Mail, Tag, FileText, CheckCircle2, ShieldAlert, Camera, MapPin, AlertCircle } from 'lucide-react';
+import { MessageSquare, Send, User, Mail, Tag, FileText, CheckCircle2, ShieldAlert, Camera, MapPin, AlertCircle, Info } from 'lucide-react';
 
 export default function FeedbackPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -187,7 +187,13 @@ export default function FeedbackPage() {
 
             {/* Image Upload Input */}
             <div>
-              <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', fontWeight: '600', color: 'var(--ink)' }}>Upload Photographic Evidence</label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '0.85rem', fontWeight: '600', color: 'var(--ink)' }}>Upload Photographic Evidence</label>
+              
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '10px', color: 'var(--navy)', fontSize: '0.75rem', background: 'rgba(20, 33, 61, 0.05)', padding: '8px', borderRadius: '6px' }}>
+                <Info size={14} style={{ flexShrink: 0 }} />
+                <span><strong>Note:</strong> A GeoTag photo is necessary which contains the Timestamp and coordinates for physical verification.</span>
+              </div>
+
               <div style={{ position: 'relative' }}>
                 <Camera size={18} style={{ ...iconStyle, color: 'var(--navy)' }} />
                 <input 
