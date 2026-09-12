@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Map, Users, BarChart3, MessageSquare, Sparkles, HardHat, Building } from 'lucide-react';
+import { LayoutDashboard, Map, Users, BarChart3, MessageSquare, Sparkles, HardHat, Lock } from 'lucide-react';
 import Dashboard from './pages/Dashboard';
 import RiskCenter from './pages/RiskCenter';
 import StatePerformance from './pages/StatePerformance';
@@ -8,12 +8,15 @@ import MpPerformance from './pages/MpPerformance';
 import ComparePage from './pages/ComparePage';
 import ProjectDetails from './pages/ProjectDetails';
 import MpProfile from './pages/MpProfile';
-import OfficerCopilot from './pages/OfficerCopilot'; // <-- Added Import
-import FeedbackPage from './pages/FeedbackPage'; // <-- Add this import
+import OfficerCopilot from './pages/OfficerCopilot'; 
+import FeedbackPage from './pages/FeedbackPage'; 
 import VendorPortal from './pages/VendorPortal';
 import './index.css'; 
 import Footer from './components/Footer';
 import VendorRegistry from './pages/VendorRegistry';
+import AccessGateway from './pages/AccessGateway';
+import DnoPortal from './pages/DnoPortal';
+
 function NavLink({ to, children }) {
   const location = useLocation();
   const isActive = location.pathname === to;
@@ -24,17 +27,12 @@ function NavLink({ to, children }) {
   );
 }
 
-// Temporary Feedback Placeholder Component
-
-// Extracted Navigation Component to handle the sliding line logic
 function TopNav({ houseFilter, setHouseFilter }) {
   const location = useLocation();
   const navRef = useRef(null);
   const [indicator, setIndicator] = useState({ left: 0, width: 0, opacity: 0 });
 
-  // Recalculate the line's position every time the route changes
   useEffect(() => {
-    // A small timeout ensures React has finished applying the ".active" class to the DOM
     setTimeout(() => {
       if (navRef.current) {
         const activeLink = navRef.current.querySelector('a.active');
@@ -42,7 +40,7 @@ function TopNav({ houseFilter, setHouseFilter }) {
           setIndicator({
             left: activeLink.offsetLeft,
             width: activeLink.offsetWidth,
-            opacity: 1 // Fade in after initial mount to prevent jumping from the left edge
+            opacity: 1 
           });
         }
       }
@@ -62,11 +60,9 @@ function TopNav({ houseFilter, setHouseFilter }) {
         <NavLink to="/mps"><Users size={18} /> Browse MPs</NavLink>
         <NavLink to="/compare"><BarChart3 size={18} /> Compare</NavLink>
         <NavLink to="/vendors"><HardHat size={18} /> Agencies</NavLink>
-        <NavLink to="/vendor-portal"><Building size={18} /> Vendor Portal</NavLink> {/* <-- Added Link */}
-        <NavLink to="/copilot"><Sparkles size={18} /> AI Copilot</NavLink> {/* <-- Added Link */}
+        <NavLink to="/copilot"><Sparkles size={18} /> AI Copilot</NavLink> 
         <NavLink to="/feedback"><MessageSquare size={18} /> Feedback</NavLink>
         
-        {/* The Animated Magic Line */}
         <div style={{
           position: 'absolute',
           bottom: 0,
@@ -80,7 +76,7 @@ function TopNav({ houseFilter, setHouseFilter }) {
         }} />
       </div>
 
-      <div style={{ display: 'flex', gap: '10px' }}>
+      <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
         <select 
           value={houseFilter}
           onChange={(e) => setHouseFilter(e.target.value)}
@@ -90,6 +86,11 @@ function TopNav({ houseFilter, setHouseFilter }) {
           <option value="Lok Sabha">Lok Sabha</option>
           <option value="Rajya Sabha">Rajya Sabha</option>
         </select>
+
+        {/* The New Clean Access Button for the Gateway */}
+        <Link to="/gateway" style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--navy)', color: '#fff', padding: '10px 16px', borderRadius: '6px', textDecoration: 'none', fontWeight: '600', fontSize: '0.9rem', transition: 'background 0.2s' }}>
+          <Lock size={16} /> Official Access
+        </Link>
       </div>
     </nav>
   );
@@ -113,9 +114,13 @@ function App() {
             <Route path="/project/:id" element={<ProjectDetails />} />
             <Route path="/feedback" element={<FeedbackPage />} />
             <Route path="/mp/:mpName" element={<MpProfile />} />
-            <Route path="/vendors" element={<VendorRegistry />} /> {/* <-- ADD THIS */}
-            <Route path="/vendor-portal" element={<VendorPortal />} /> {/* <-- Added Route */}
-            <Route path="/copilot" element={<OfficerCopilot />} /> {/* <-- Fixed Route Syntax */}
+            <Route path="/vendors" element={<VendorRegistry />} /> 
+            <Route path="/copilot" element={<OfficerCopilot />} /> 
+            
+            {/* Secure Portals & Gateway */}
+            <Route path="/gateway" element={<AccessGateway />} />
+            <Route path="/vendor-portal" element={<VendorPortal />} /> 
+            <Route path="/dno-portal" element={<DnoPortal />} /> 
           </Routes>
         </main>
         <Footer/>
